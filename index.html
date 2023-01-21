@@ -7,8 +7,19 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
+<header></header>
 <body>
-    <div id="grid-canvas"></div>
+    <div id="etch-border">
+        <div id="grid-canvas"></div>
+        <div class="button-container">
+            <button onclick="changeCanvasSize(5)">5</button>
+            <button onclick="changeCanvasSize(10)">10</button>
+            <button onclick="changeCanvasSize(16)">16</button>
+            <button onclick="changeCanvasSize(20)">20</button>
+            <button onclick="changeCanvasSize(40)">40</button>
+            <button onclick="changeCanvasSize(50)">50</button>
+        </div>
+    </div>
 </body>
 </html>
 

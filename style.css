@@ -1,8 +1,45 @@
+html {
+    background-color: black;
+}
+body {
+    margin: 0px;
+}
+header {
+    height: 80px;
+    width: 100vw;
+    background-color: cornflowerblue;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#etch-border {
+    height: 700px;
+    width: 700px;
+    background-color: cadetblue;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5%;
+
+}
 #grid-canvas {
     display: grid;
     height: 500px;
     width: 500px;
-    margin: 0 auto;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button-container > button {
+    margin: 5px 10px;
+    width: 60px;
+    height: 60px;
+    font-size: medium;
+    background-color: black;
+    color: white;
 }
 .grid-square {
     display: inline-block;
