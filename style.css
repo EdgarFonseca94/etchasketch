@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: white;
 }
 body {
     margin: 0px;
@@ -7,20 +7,24 @@ body {
 header {
     height: 80px;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: rgb(25, 190, 202);
     margin-bottom: 30px;
     display: inline-block;
+    font-size: 70px;
+    text-align: center;
+    border-bottom: 1px solid grey;
 }
 #etch-border {
     height: 700px;
     width: 700px;
-    background-color: cadetblue;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     border-radius: 5%;
+    background: linear-gradient(0deg, rgb(25, 190, 202), #272727);
+    box-shadow: 15px 5px 10px black;
 
 }
 #grid-canvas {
@@ -38,6 +42,13 @@ header {
     width: 60px;
     height: 60px;
     font-size: medium;
+    background-color: black;
+    color: white;
+}
+.color-change-buttons > button {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
     background-color: black;
     color: white;
 }

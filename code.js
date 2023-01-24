@@ -1,3 +1,14 @@
+function changeColor(e) {
+    Array.from(canvas.children).forEach((child) => {
+        child.style.backgroundColor = 'white';
+    });
+
+    Array.from(canvas.children).forEach((child) => {
+        child.addEventListener('mouseover', () => {
+            child.style.backgroundColor = e;
+        });
+    });
+}
 function changeCanvasSize(squarePerSide) {
     // clears canvas
     canvas.innerHTML = "";
@@ -32,6 +43,6 @@ canvas.setAttribute('style', 'grid-template-columns: repeat(25, 1fr);');
 
 Array.from(canvas.children).forEach((child) => {
     child.addEventListener('mouseover', () => {
-        child.style.backgroundColor = 'grey';
+        child.style.backgroundColor = 'black';
     });
 });

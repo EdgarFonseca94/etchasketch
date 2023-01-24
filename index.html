@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="code.js" defer></script>
 </head>
-<header></header>
+<header>Etch-A-Sketch</header>
 <body>
     <div id="etch-border">
         <div id="grid-canvas"></div>
@@ -19,8 +20,11 @@
             <button onclick="changeCanvasSize(40)">40</button>
             <button onclick="changeCanvasSize(50)">50</button>
         </div>
+        <div class="color-change-buttons">
+            <button onclick="changeColor(this.value)" value="black">Black</button>
+            <button onclick="changeColor(this.value)" value="red">Red</button>
+            <button onclick="changeColor(this.value)" value="blue">Blue</button>
+        </div>
     </div>
 </body>
 </html>
-
-<script src="code.js"></script>
